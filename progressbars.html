@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>Possible Progress Bars</title>
+  
+<style>
+ul.unbulleted {list-style:none;}
+/***************************************/
+/* example 1                           */
+/***************************************/
+.graph, .bar {
+  position:relative;
+  color:#444;
+}
+.graph {
+  width:80%;
+  border:1px solid #777888;
+  padding:1px;
+  margin-bottom:2px;
+}
+.graph .bar {
+  display:block;
+  background:#B1D6FF;
+  border-right:1px solid #777888;
+  text-align:right;
+}
+.graph .bar span {
+  position:absolute;
+  left:1em;
+}
+/***************************************/
+/* example 2                           */
+/***************************************/
+ul { margin:0; padding:0 }
+li, li div {
+  display:block;
+  position:relative;
+  height:20px;
+}
+li {
+  width:80%;
+  margin:0 0 15px;
+  background:#B1D6FF;
+  border:1px solid #555999;
+}
+li div {
+  background:#B1D632;
+  width:75%;
+}
+li div strong {
+  position:absolute;
+  right:-4px; top:-4px;
+  display:block;
+  color:#fefefe;
+  background:#fefefe;
+  border:1px solid #555999;
+  height:26px;
+  width:4px;
+/*text-align:justify;*/
+  font-size:9px;
+  text-indent:-9999px;
+/*overflow:hidden; */
+  text-align:justify;
+  vertical-align:baseline;
+}
+</style>
+</head>
+
+<body>
+	<div id="content">
+  
+		<div id="chart-ex-1">
+			<div class="graph">
+				<strong class="bar" style="width: 20%;">20%</strong>
+			</div>
+			<div class="graph">
+				<strong class="bar" style="width: 40%;">40%</strong>
+			</div>
+			<div class="graph">
+				<strong class="bar" style="width: 60%;">60%</strong>
+			</div>
+			<div class="graph">
+				<strong class="bar" style="width: 80%;">80%</strong>
+			</div>
+			<div class="graph">
+				<strong class="bar" style="width: 100%;">100%</strong>
+			</div>
+		</div>
+
+		<br /><br /><br />
+
+		<div id="chart-ex-2">
+			<ul>
+				<li><div style="width:25%;"><strong>25%</strong></div></li>
+				<li><div style="width:55%;"><strong>55%</strong></div></li>
+				<li><div style="width:85%;"><strong>85%</strong></div></li>
+			</ul>
+		</div>
+    
+</div><!---//END: div#content //--->
+</body>
+</html>
